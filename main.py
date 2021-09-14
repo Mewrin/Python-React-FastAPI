@@ -3,17 +3,21 @@
 
 from typing import Optional
 from fastapi import FastAPI 
+from fastapi.responses import HTMLResponse
 
 from server import Server
 
 app = FastAPI()
 webServer = Server()
 
-@app.get('/')
+@app.get('/', response_class=HTMLResponse)
 def IndexPage():
-    return {'Hello World'}
+    return f"""{ReadHtmlPage('index.html')}"""
 
 def main():
     webServer.Run()
 
 main()
+
+def ReadHtmlPage(pageName):
+    return open(pageName, 'r').readlines()
