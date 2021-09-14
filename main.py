@@ -1,5 +1,4 @@
-# Note - Install FastAPI in terminal using command 'pip install fastapi' and 'pip install uvicorn'
-#      - To run the server, 
+# Note - Install FastAPI in terminal using command 'pip install fastapi' and 'pip install uvicorn', everything else is automatic
 
 from typing import Optional
 from fastapi import FastAPI 
