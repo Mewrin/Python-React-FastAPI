@@ -1,4 +1,7 @@
-# Note - Install FastAPI in terminal using command 'pip install fastapi' and 'pip install uvicorn', everything else is automatic
+# In order to get this project to work locally, open a terminal and install the following libraries
+# pip install fastapi
+# pip install uvicorn 
+# pip install aiofiles
 
 import codecs 
 from typing import Optional
