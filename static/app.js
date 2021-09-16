@@ -10,7 +10,7 @@ class App extends React.Component {
     render() {
         return (
             React.createElement('div', {}, 
-                React.createElement(ShoppingList), 
+                React.createElement(ShoppingList, ["Hello world", "React is interesting so far"]), 
                 React.createElement(LikeButton))
         )
     }
