@@ -34,11 +34,10 @@ class ShoppingList extends React.Component {
     render() {
         const { error, isLoaded, items } = this.state;
         if (error) {
-        return "error";
+            return React.createElement('p', {}, "An error occured.") 
         } else if (!isLoaded) {
-        return "loading...";
+            return React.createElement('p', {}, "Loading...") 
         } else {
-            console.log(items);
             return (React.createElement('div', {}, 
                             React.createElement("h2", {}, "Shopping list"),
                             React.createElement(StringUnorderedList, items)))
