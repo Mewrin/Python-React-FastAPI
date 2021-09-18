@@ -25,8 +25,8 @@ class ShoppingList extends React.Component {
             },
             (error) => {
                 this.setState({
-                isLoaded: true,
-                error
+                    isLoaded: true,
+                    error
                 });
             }
         )
