@@ -1,7 +1,6 @@
 # In order to get this project to work locally, open a terminal and install the following libraries
 # pip install fastapi
 # pip install uvicorn 
-# pip install aiofiles
 
 import codecs 
 from typing import Optional
