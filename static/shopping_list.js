@@ -12,7 +12,8 @@ class ShoppingList extends React.Component {
           };
     }
 
-    componentDidMount() { // this is called after the component is placed in the DOM and rendered, as part of the react life-cycle
+    // personal note - componentDidMount() is called after the component is placed in the DOM and rendered, as part of the react life-cycle
+    componentDidMount() { 
         fetch("/shopping-list")
             .then(response => response.json())
             .then(
